@@ -1,0 +1,65 @@
+.hero{
+
+    height: 100dvh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+   
+  
+
+    &:before{
+        height:100%;
+        width: 100%;
+        content:"";
+        display: block;
+        background:url("../../img/world2.png");
+        background-position: top center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        position: absolute;
+        z-index: -1;
+
+        animation: fadein 5.5s forwards;
+
+   
+
+    }
+
+
+
+    .hero-cont{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap: calc(var(--unit)*2/2);
+
+
+        p.section-indicator{
+            animation: slideleft 1.5s  0.3s forwards;
+            opacity:0;
+        }
+        
+        h1{
+            animation: fadein 1.5s 0s forwards;
+            opacity:0;
+            font-size: 4rem;
+            line-height: 100%;
+
+        }
+        
+        p.sub-heading{
+            animation: slideright 1.5s 0.6s forwards;
+            opacity:0;
+            font-size: 1rem;
+
+        }
+        
+        .btn{
+            animation: fadein 1.5s  0.9s forwards;
+            opacity:0;
+
+        }
+
+
+    }
+}

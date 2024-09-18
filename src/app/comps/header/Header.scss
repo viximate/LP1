@@ -1,0 +1,22 @@
+.header{
+    position:fixed;
+    top:calc(var(--unit)*2);
+    z-index: 2;
+    animation: fadeindown 1.5s  0.5s forwards;
+    opacity:0;
+
+    .header-cont{
+        padding: calc(var(--unit)/2) calc(var(--unit));
+        border-radius:100px;
+
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .links{
+            display:flex;
+            gap:calc(var(--unit)*2)
+        }
+
+    }
+}
